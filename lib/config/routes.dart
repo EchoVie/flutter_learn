@@ -7,7 +7,7 @@ import 'package:flutter_learn/pages/user/index.dart';
 
 var rootHandler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> params) {
-  return const Home();
+  return Home(key: UniqueKey());
 });
 
 var loginHandler = Handler(

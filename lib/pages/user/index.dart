@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/widgets/page_content.dart';
 
-class User extends StatelessWidget {
+class User extends StatefulWidget {
   const User({Key? key}) : super(key: key);
 
   @override
+  State createState() {
+    return UserState();
+  }
+}
+
+class UserState extends State<User> {
+  UserState() {}
+
+  @override
   Widget build(BuildContext context) {
-    return PageContent(
-      title: '首页',
-      child: TextButton(
-        child: const Text('注册'),
-        onPressed: () {
-          Navigator.pushNamed(context, '/register');
-        },
-      )
-    );
+    return Text('user');
   }
 }

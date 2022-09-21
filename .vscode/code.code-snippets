@@ -10,7 +10,7 @@
 		"prefix": "StatefulW",
 		"body": [
 			"class $1 extends StatefulWidget {",
-			"  const $1({required Key key}) : super(key: key);",
+			"  const $1({Key? key}) : super(key: key);",
 			"",			
 			"  @override",
 			"  State createState() {",
